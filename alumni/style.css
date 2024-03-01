@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --violet: #25106d;
+    --purple: #eee9ff;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.main .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    height: 5rem;
+    border-bottom: 1px solid var(--black);
+}
+
+.main .nav .logo .logo-img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.main .nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.main .nav-btn span {
+    border: 1px solid var(--violet); 
+    border-radius: 1rem;
+    display: flex;
+    width: 20rem;
+    height: 2rem;
+
+    position: relative;
+}
+
+.main .nav-btn span a:nth-child(1){
+    background: #25106d;
+    width: 10rem;
+    border-radius: 1rem;
+    color: #fff;
+    height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+}
+.main .nav-btn span a:nth-child(2){
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.main .nav-btn a {
+    color: var(--violet);
+    font-family: 'roboto';
+    font-weight: 600;
+}
+.main .nav-btn >span >a{
+    transition: .4s linear;
+  
+}
+
+.main .section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.main .section-1 img {
+    width: 500px;
+    height: 600px;
+}
+
+.main .section-1 .section-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .section-1 .section-txt p:nth-child(1){
+    font-size: 2rem;
+    font-family: 'roboto';
+    color: var(--violet);
+    font-weight: 700;
+}
+
+.main .section-1 .section-txt p:nth-child(3){
+    font-family: 'roboto';
+    color: var(--violet);
+    font-size: 1.2rem;
+    max-width: 23rem;
+    margin-bottom: 1rem; 
+}
+
+.main .section-1 .section-txt h1 {
+    font-family: 'roboto';
+    color: var(--violet);
+    font-size: 3rem;
+    font-weight: 800;
+    max-width: 20rem;
+    margin-bottom: 1rem;
+}
+
+.main .section-1 .section-txt .section-btn {
+    font-family: 'roboto';
+    display: flex;
+    gap: 1rem;
+}
+
+.main .section-1 .section-txt .section-btn  span {
+    background-color: var(--violet);
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+}
+
+.main .section-1 .section-txt .section-btn  span a {
+    color: var(--white);
+}
+
+/*SECTION 2 / STYLE*/
+
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.main .section-2 .section-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .section-2 .section-txt >p{
+    padding-top: 7rem;
+}
+
+
+.main .section-2 .section-txt p:nth-child(1) {
+    font-family: 'roboto';
+    max-width: 300px;
+    font-size: 1.2rem;
+    color: var(--violet);
+}
+
+.main .section-2 .section-data .data-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .section-2 .section-data .data-count div {
+    background-color: var(--purple);
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    border-radius: 1.3rem;
+}
+
+.main .section-2 .section-data .data-count div h1:nth-child(1) {
+    font-family: 'roboto';
+    color: var(--violet);
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.main .section-2 .section-data .data-count div p:nth-child(2) {
+    font-family: 'roboto';
+    color: var(--violet);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+    .main .section-1 {
+        justify-content: center;
+    }
+
+    .main .section-1 img {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main .section-2 .section-txt >p{
+        padding-top: 3rem;
+    }
+
+    .main .section-2 .section-data .data-count div {
+        width: 11rem;
+        height: 11rem;
+    }
+    
+}
